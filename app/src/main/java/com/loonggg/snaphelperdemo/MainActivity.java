@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         rv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         rv.setAdapter(new CardRvAdapter(this, mDataList));
-        CustomSnapHelper mMySnapHelper = new CustomSnapHelper();
-        mMySnapHelper.attachToRecyclerView(rv);
 //        LinearSnapHelper mLinearSnapHelper = new LinearSnapHelper();
 //        mLinearSnapHelper.attachToRecyclerView(rv);
+        CustomSnapHelper mMySnapHelper = new CustomSnapHelper();
+        mMySnapHelper.attachToRecyclerView(rv);
     }
 }
